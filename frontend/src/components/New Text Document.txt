@@ -1,0 +1,23 @@
+// frontend/src/components/SearchBar.js
+
+import React from 'react';
+import './SearchBar.css';
+
+const SearchBar = () => {
+  return (
+    <div className="search-bar-container">
+      <form>
+        <input
+          type="url"
+          className="url-input"
+          placeholder="Paste Amazon or Flipkart product URL here"
+        />
+        <button type="submit" className="analyze-button">
+          Analyze
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default SearchBar;

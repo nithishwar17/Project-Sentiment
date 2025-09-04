@@ -1,0 +1,53 @@
+/* A cleaner, more modern search bar with better focus states and an icon */
+
+.search-bar-container {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 700px;
+  margin: auto;
+}
+
+.url-input {
+  width: 100%;
+  padding: 18px 25px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.url-input:focus {
+  border-color: var(--primary-color);
+}
+
+.analyze-button {
+  padding: 18px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.analyze-button:hover {
+  background-color: #2980b9;
+}
+
+.analyze-button svg {
+  width: 20px;
+  height: 20px;
+}

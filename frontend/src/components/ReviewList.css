@@ -1,0 +1,76 @@
+/* Improved styling for individual review cards with better hierarchy */
+
+.review-list {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 15px; /* For scrollbar spacing */
+}
+
+/* Custom scrollbar for a cleaner look */
+.review-list::-webkit-scrollbar {
+  width: 8px;
+}
+.review-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.review-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.review-list::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+.review-card {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light-gray);
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.review-card:last-child {
+  border-bottom: none;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.review-content {
+  flex-grow: 1;
+}
+
+.review-text {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.sentiment-badge {
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+.sentiment-positive {
+  background-color: var(--success-color);
+}
+.sentiment-negative {
+  background-color: var(--danger-color);
+}
+.sentiment-neutral {
+  background-color: var(--neutral-color);
+}

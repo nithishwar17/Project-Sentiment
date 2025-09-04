@@ -1,0 +1,51 @@
+/* A modern card-based layout for the dashboard results */
+
+.dashboard-container {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-container h2 {
+  text-align: left;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.chart-container, .reviews-container {
+  background-color: var(--surface-color);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--light-gray);
+}
+
+.chart-container h3, .reviews-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
